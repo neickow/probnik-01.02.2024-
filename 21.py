@@ -1,9 +1,9 @@
 def f(a, p):
-    if (a>=99) and (p==3 or p==5):
+    if (a>=100) and (p==3 or p==5):
         return True
-    if (a>=99) and (p==2 or p==4):
+    if (a>=100) and (p==2 or p==4):
         return False
-    if (a<99) and (p==5):
+    if (a<100) and (p==5):
         return False
     if p%2==1: # petya
         return f(a*2,p+1) and f(a*3,p+1)
